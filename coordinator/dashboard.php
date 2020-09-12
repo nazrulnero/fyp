@@ -110,8 +110,10 @@ if (strlen($_SESSION['coorlogin']) == 0) {
                                                     <?php $cnt++;
                                                         }
                                                     } ?>
-                                                </tbody>
+                                                </tbody>                                                
                                             </table>
+                                            <button onclick="printDiv()">Print this page</button>
+                                            <button onclick="window.print()">Print this page</button>
                                         </div>
                                     </div>
                                 </div>
@@ -125,6 +127,16 @@ if (strlen($_SESSION['coorlogin']) == 0) {
         </div>
         <div class="left-sidebar-hover"></div>
 
+        <script>
+            function printDiv() {
+                var divToPrint = document.getElementById('example');
+                newWin = window.open("");
+                newWin.document.write(divToPrint.outerHTML);
+                newWin.print();
+                newWin.close();
+                newWin.document.close();
+            }
+        </script>
         <!-- Javascripts -->
         <script src="../assets/plugins/jquery/jquery-2.2.0.min.js"></script>
         <script src="../assets/plugins/materialize/js/materialize.min.js"></script>

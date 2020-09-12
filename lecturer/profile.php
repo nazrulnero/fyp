@@ -148,6 +148,7 @@ if (strlen($_SESSION['lectlogin']) == 0) {
                                                                     </div>
                                                                     <input type="hidden" name="LectId" id="LectId" />
                                                                     <button type="submit" value="Insert" id="insert" class="btn btn-primary" name="submit">Save</button>
+                                                                </form>
                                                                     <!---->
                                                                     <div class="input-field col s12">
                                                                         <label for="lectcode">Lecturer Code</label>
@@ -216,7 +217,7 @@ if (strlen($_SESSION['lectlogin']) == 0) {
         </div>
         <div class="left-sidebar-hover"></div>
 
-        
+
 <!--javascript For uploading image-->
 <script>
     $(document).ready(function() {
@@ -252,3 +253,4 @@ if (strlen($_SESSION['lectlogin']) == 0) {
     </body>
 
     </html>
+<?php } ?>
