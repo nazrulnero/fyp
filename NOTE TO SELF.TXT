@@ -1,0 +1,15 @@
+Admin
+Username: admin
+Password: 1234
+
+Lecturers
+Username: suriana@gmail.com
+Password: 1234
+
+Students
+Username: nazruleshah@gmail.com
+Password: bullworth1
+
+Coordinator
+Username: coordinator
+Password: 1
